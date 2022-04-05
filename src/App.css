@@ -56,3 +56,8 @@ body {
   user-select: none;
   min-width: 178px;
 }
+
+#btn__start:hover {
+  opacity: 0.9;
+  transition: all 0.2s ease-in-out;
+}

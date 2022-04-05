@@ -1,0 +1,13 @@
+/*  Wallet component css */
+
+#header__btn {
+  color: #ff5c00;
+  background: rgba(255, 255, 255, 0.62);
+  box-shadow: 1.48767px 4.16548px 1.19014px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+#icon__btn {
+  background: rgba(255, 255, 255, 0.62);
+  box-shadow: 1.48767px 4.16548px 1.19014px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}

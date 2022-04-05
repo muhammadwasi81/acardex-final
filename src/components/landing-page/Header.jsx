@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Navbar } from 'react-bootstrap'
-import '../App.css'
+import '../../App.css'
 export default function Header() {
   return (
     <Navbar sticky="top" className="navbar">
