@@ -9,6 +9,27 @@
   box-sizing: border-box;
 }
 
+/* scroll bar */
+::selection {
+  background-color: #8e67fc;
+  color: white;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #8e67fc;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: purple;
+  border-radius: 10px;
+}
+
 #header__btn {
   color: #ff5c00;
   background: rgba(255, 255, 255, 0.62);
