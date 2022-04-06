@@ -3,6 +3,7 @@ import { Button, Card, Col, Container, Form, Row } from 'react-bootstrap'
 import LazyShow from '../animation/Lazy'
 
 export default function Cards({
+  mainHead,
   chipText,
   chipTextTwo,
   price,
@@ -15,6 +16,10 @@ export default function Cards({
   OneADA,
   decimalNumber,
   decimalNumberTwo,
+  EffectiveAcardexPrice,
+  EffectiveADAPrice,
+  TotalLockedAcardex,
+  TotalLockedADA,
 }) {
   const [type, setType] = useState(false)
   return (
@@ -29,7 +34,7 @@ export default function Cards({
           >
             <Row className="p-3">
               <Col md={4} sm={12} className="mt-5">
-                <p className="h1 text-justify">ACX/ADA</p>
+                <p className="h1 text-justify">{mainHead}</p>
                 <div
                   style={{
                     backgroundColor: '#D65D5D',
@@ -71,7 +76,7 @@ export default function Cards({
                     <p className="fw-bold">{totalLocked} </p>
                   </Col>
                   <Col>
-                    <p>Total Locked ADA</p>
+                    <p className="fs-6">Total Locked ADA</p>
                     <p className="fw-bold">{lockedADA}</p>
                   </Col>
                   <Col>
@@ -107,13 +112,23 @@ export default function Cards({
                   </Form.Control>
                 </Form.Group>
               </Col>
-              <Col sm={12} md={4} className="text-black fw-bold mt-5">
-                <p>Effective Acardex Price </p>
-                <p>Effective ADA Price</p>
-                <p>Total Locked Acardex</p>
-                <p>Total Locked ADA</p>
+              <Col
+                sm={12}
+                md={4}
+                className="fw-bold mt-5 text-capitalize"
+                style={{ color: '#767676' }}
+              >
+                <p>{EffectiveAcardexPrice}</p>
+                <p>{EffectiveADAPrice}</p>
+                <p>{TotalLockedAcardex}</p>
+                <p>{TotalLockedADA}</p>
               </Col>
-              <Col sm={12} md={3} className="text-black mt-5">
+              <Col
+                sm={12}
+                md={3}
+                className="text-capitalize mt-5"
+                style={{ color: '#767676' }}
+              >
                 <p>{oneArdex}</p>
                 <p>{OneADA}</p>
                 <p>{decimalNumber}</p>
@@ -128,6 +143,7 @@ export default function Cards({
                         borderRadius: '6px',
                         background: 'rgba(239, 93, 101, 0.37)',
                         margin: '3px',
+                        textTransform: 'capitalize',
                       }}
                     >
                       {footerButtonText}
@@ -140,6 +156,7 @@ export default function Cards({
                         borderRadius: '6px',
                         background: 'rgba(239, 93, 101, 0.37)',
                         margin: '3px',
+                        textTransform: 'capitalize',
                       }}
                     >
                       {footerButtonTextTwo}

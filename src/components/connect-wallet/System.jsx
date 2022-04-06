@@ -142,10 +142,10 @@ export default function System() {
                   }}
                 >
                   <img
-                    src="/assets/first.png"
+                    src="/assets/card-1.png"
                     alt="logo"
-                    minWidth="150px"
-                    className="img-fluid m-auto"
+                    width="150px"
+                    className="img-fluid mt-2 m-auto"
                   />
                 </Card>
               </Col>
@@ -159,10 +159,10 @@ export default function System() {
                   }}
                 >
                   <img
-                    src="/assets/sec-icon.png"
-                    minWidth="200px"
+                    src="/assets/card-2.png"
+                    width="150px"
                     alt="logo"
-                    className="img-fluid m-auto"
+                    className="img-fluid mt-0 m-auto"
                   />
                 </Card>
               </Col>
@@ -176,9 +176,9 @@ export default function System() {
                   }}
                 >
                   <img
-                    src="/assets/g-icon.png"
-                    minWidth="150px"
-                    className="img-fluid m-auto"
+                    src="/assets/wmt.png"
+                    width="130px"
+                    className="img-fluid mt-2 m-auto"
                     alt="logo"
                   />
                 </Card>
@@ -193,9 +193,9 @@ export default function System() {
                   }}
                 >
                   <img
-                    src="/assets/last-icon.png"
+                    src="/assets/card-3.png"
                     minWidth="150px"
-                    className="img-fluid m-auto"
+                    className="img-fluid m-auto mt-2"
                     alt="logo"
                   />
                 </Card>
