@@ -1,16 +1,36 @@
 import React, { useState } from 'react'
 import { Button, Card, Col, Container, Row } from 'react-bootstrap'
-import SelectModal from '../Modal/SelectModal'
 import { AiOutlineCaretDown } from 'react-icons/ai'
 import { AiOutlineArrowDown } from 'react-icons/ai'
+import SelectModal from '../Modal/SelectModal'
+import TokenModal from '../Modal/TokenModal'
+import CustomModal from '../Modal/CustomModal'
 
 export default function SwapChild() {
   const [show, setShow] = useState(false)
+  const [modalShow, setModalShow] = useState(false)
+  const [tokenShow, setTokenShow] = useState(false)
 
-  const handleClose = () => setShow(false)
-  const handleShow = () => setShow(true)
+  const handleClose = () => {
+    setShow(false)
+  }
+  const hideHandler = () => {
+    setModalShow(false)
+  }
+  const hideTokenHandler = () => {
+    setTokenShow(false)
+  }
+  const showTokenHandler = () => {
+    setTokenShow(true)
+  }
+  const showHandler = () => {
+    setModalShow(true)
+  }
+  const handleShow = () => {
+    setShow(true)
+  }
   return (
-    <Container className="my-3">
+    <Container className="my-5">
       <Card
         style={{
           borderRadius: '26px',
@@ -108,7 +128,7 @@ export default function SwapChild() {
                   </Col>
                   <Col sm={4}>
                     <Button
-                      onClick={handleShow}
+                      onClick={showTokenHandler}
                       style={{
                         background: '#FFFFFF',
                         borderRadius: '12px',
@@ -139,12 +159,15 @@ export default function SwapChild() {
             display: 'flex',
             justifyContent: 'center',
           }}
+          onClick={showHandler}
           className="w-100"
         >
           Connect Wallet
         </Button>
       </Container>
       <SelectModal onShow={show} onHide={handleClose} />
+      <CustomModal onShow={modalShow} onHide={hideHandler} />
+      <TokenModal onShow={tokenShow} onHide={hideTokenHandler} />
     </Container>
   )
 }

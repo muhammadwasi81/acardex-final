@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Card, Col, Container, Row } from 'react-bootstrap'
 import { AiFillHome } from 'react-icons/ai'
 import { MdSwapCalls } from 'react-icons/md'
@@ -6,9 +6,9 @@ import { BsFillDropletFill } from 'react-icons/bs'
 import { MdQueue } from 'react-icons/md'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
-import CustomModal from '../Modal/CustomModal'
 import { Link } from 'react-router-dom'
 import LazyShow from '../animation/Lazy'
+import '../connect-wallet/Wallet.css'
 
 const responsive = {
   desktop: {
@@ -28,10 +28,6 @@ const responsive = {
 }
 
 export default function System() {
-  const [show, setShow] = useState(false)
-
-  const handleClose = () => setShow(false)
-  const handleShow = () => setShow(true)
   return (
     <>
       <LazyShow>
@@ -72,7 +68,6 @@ export default function System() {
                       color: '#000000',
                       cursor: 'pointer',
                     }}
-                    onClick={handleShow}
                   />
                   <span className="m-3 text-black">Home</span>
                 </Card.Title>
@@ -127,7 +122,7 @@ export default function System() {
           </Row>
 
           {/* Todo: cards carousel */}
-          <Row>
+          <Row className="mt-5">
             <Carousel
               responsive={responsive}
               partialVisible={true}
@@ -207,7 +202,6 @@ export default function System() {
               </Col>
             </Carousel>
           </Row>
-          <CustomModal onShow={show} onHide={handleClose} />
         </Container>
       </LazyShow>
     </>

@@ -1,14 +1,14 @@
 import React from 'react'
 import { Button, Col, Container, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import '../../App.css'
+import '../landing-page/landing.css'
 import LazyShow from '../animation/Lazy'
 
 export default function Decenteralized() {
   return (
     <>
       <LazyShow>
-        <Container className="my-3">
+        <Container id="cont">
           <Row>
             <Col sm={12} md={6} className="mt-2 p-5">
               <p className="h1 lh-5 text-capitalize text-white main__head">

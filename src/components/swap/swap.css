@@ -1,0 +1,17 @@
+#bg__image {
+  background: url('../../../public/assets/swap-back.png') no-repeat center
+    center;
+  -webkit-background: url('../../../public/assets/back.png') no-repeat center
+    center;
+  -moz-background: url('../../../public/assets/back.png') no-repeat center
+    center;
+  -o-background: url('../../../public/assets/back.png') no-repeat center center;
+  object-fit: contain;
+  -webkit-object-fit: contain;
+  background-size: cover;
+  -webkit-background-size: contain;
+  background-attachment: fixed;
+  -webkit-background-attachment: fixed;
+  position: relative;
+  height: auto;
+}

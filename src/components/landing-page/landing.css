@@ -1,3 +1,4 @@
+/* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic&family=Inter:wght@200;400&display=swap');
 
 @import url('https://fonts.googleapis.com/css?family=Merriweather+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic');
@@ -8,7 +9,6 @@
   box-sizing: border-box;
 }
 
-/* html,
 body {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
@@ -17,19 +17,36 @@ body {
   -webkit-background-color: #8e67fc;
   -o-background-color: #8e67fc;
   -moz-background-color: #8e67fc;
-  background: url('../public/assets/back.png') no-repeat center center;
-  -webkit-background: url('../public/assets/back.png') no-repeat center center;
-  -moz-background: url('../public/assets/back.png') no-repeat center center;
-  -o-background: url('../public/assets/back.png') no-repeat center center;
+  /* background: url('../../../public/assets/back.png') no-repeat center center;
+  -webkit-background: url('../../../public/assets/back.png') no-repeat center
+    center;
+  -moz-background: url('../../../public/assets/back.png') no-repeat center
+    center;
+  -o-background: url('../../../public/assets/back.png') no-repeat center center;
   object-fit: contain;
   -webkit-object-fit: contain;
-  background-size: cover;
+  background-size: contain;
+  -webkit-background-size: contain;
+  background-attachment: fixed;
+  -webkit-background-attachment: fixed; */
+  font-family: 'Merriweather Sans, sans-serif' !important;
+  -webkit-font-family: 'Merriweather Sans, sans-serif' !important;
+}
+
+#cont {
+  background: url('../../../public/assets/back.png') no-repeat center center;
+  -webkit-background: url('../../../public/assets/back.png') no-repeat center
+    center;
+  -moz-background: url('../../../public/assets/back.png') no-repeat center
+    center;
+  -o-background: url('../../../public/assets/back.png') no-repeat center center;
+  object-fit: contain;
+  -webkit-object-fit: contain;
+  background-size: contain;
   -webkit-background-size: contain;
   background-attachment: fixed;
   -webkit-background-attachment: fixed;
-  font-family: 'Merriweather Sans, sans-serif' !important;
-  -webkit-font-family: 'Merriweather Sans, sans-serif' !important;
-} */
+}
 
 /* navbar */
 .navbar {
@@ -37,7 +54,7 @@ body {
   background: transparent;
   color: #8e67fc;
   color: transparent;
-  z-index: 100;
+  position: absolute;
   transition: background-color 1s ease 0s;
 }
 
@@ -60,20 +77,4 @@ body {
 #btn__start:hover {
   opacity: 0.9;
   transition: all 0.2s ease-in-out;
-}
-
-.react-multiple-carousel__arrow--right {
-  position: absolute;
-  top: -20px;
-  z-index: -1;
-}
-
-.react-multiple-carousel__arrow--left {
-  display: none;
-}
-
-/* modal custom class */
-
-.modal-content {
-  border-radius: 27px;
 }

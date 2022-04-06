@@ -1,13 +1,8 @@
 import React from 'react'
 import { Col, Container, Form, Modal, Row } from 'react-bootstrap'
+import '../../App.css'
 
-export default function CustomModal({
-  onShow,
-  onHide,
-  title,
-  children,
-  footer,
-}) {
+export default function CustomModal({ onShow, onHide }) {
   return (
     <>
       <Modal
@@ -16,10 +11,15 @@ export default function CustomModal({
         aria-labelledby="contained-modal-title-vcenter"
         centered
       >
-        <Modal.Header closeButton>
-          <Modal.Title>{title}</Modal.Title>
+        <Modal.Header style={{ background: '#C4C4C4', borderRadius: '27px' }}>
+          <Modal.Title>
+            <p className="text-center text-black fs-6">
+              Note: ALL hardware wallets WILL NOT be able to interact with the
+              DEX. <br /> Please use a browser extension wallet.{' '}
+            </p>
+          </Modal.Title>
         </Modal.Header>
-        <Modal.Body
+        {/* <Modal.Body
           style={{ background: '#C4C4C4', borderRadius: '10px' }}
           className="fw-bold show-grid"
         >
@@ -27,7 +27,7 @@ export default function CustomModal({
             Note: ALL hardware wallets WILL NOT be able to interact with the
             DEX. <br /> Please use a browser extension wallet.{' '}
           </p>
-        </Modal.Body>
+        </Modal.Body> */}
         <Modal.Body className="fw-bold text-center fs-5 text-black p-2 show-grid">
           <Container>
             <p className="text-center fs-3">Connect Your Wallet</p>

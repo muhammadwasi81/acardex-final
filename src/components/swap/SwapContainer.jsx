@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { Button, Card, Col, Container, Nav, Navbar, Row } from 'react-bootstrap'
-import '../connect-wallet/Wallet.css'
 import { AiFillHome, AiOutlineQuestionCircle } from 'react-icons/ai'
 import { TiArrowBackOutline } from 'react-icons/ti'
 import { IoApps } from 'react-icons/io5'
@@ -11,6 +10,7 @@ import CustomModal from '../Modal/CustomModal'
 import { MdQueue, MdSwapCalls } from 'react-icons/md'
 import SwapChild from './SwapChild'
 import LazyShow from '../animation/Lazy'
+import '../swap/swap.css'
 
 export default function SwapContainer() {
   const [show, setShow] = useState(false)
@@ -77,7 +77,7 @@ export default function SwapContainer() {
           <CustomModal onShow={show} onHide={handleClose} />
         </Navbar>
         {/* card */}
-        <Container className="my-3">
+        <Container className="my-2" id="bg__image">
           <Row>
             <Col sm={12} md={4}>
               <div style={{ position: 'relative' }}>

@@ -10,9 +10,6 @@ export default function SelectModal({ onShow, onHide, title }) {
         aria-labelledby="contained-modal-title-vcenter"
         centered
       >
-        <Modal.Header closeButton>
-          <Modal.Title>{title}</Modal.Title>
-        </Modal.Header>
         <Modal.Body
           style={{ borderRadius: '10px' }}
           className="fw-bold text-center text-black p-3"
