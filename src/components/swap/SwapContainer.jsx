@@ -6,7 +6,6 @@ import { IoApps } from 'react-icons/io5'
 import { BsFillDropletFill, BsTranslate } from 'react-icons/bs'
 import { IoStopCircle } from 'react-icons/io5'
 import { Link } from 'react-router-dom'
-import CustomModal from '../Modal/CustomModal'
 import { MdQueue, MdSwapCalls } from 'react-icons/md'
 import SwapChild from './SwapChild'
 import LazyShow from '../animation/Lazy'
@@ -74,7 +73,6 @@ export default function SwapContainer() {
               </Nav>
             </Navbar.Collapse>
           </Container>
-          <CustomModal onShow={show} onHide={handleClose} />
         </Navbar>
         {/* card */}
         <Container className="my-2" id="bg__image">
@@ -108,15 +106,19 @@ export default function SwapContainer() {
                 className="p-3"
               >
                 <Card.Title className="my-3">
-                  <AiFillHome
-                    style={{
-                      fontSize: '25px',
-                      color: '#000000',
-                      cursor: 'pointer',
-                    }}
-                    onClick={handleShow}
-                  />
-                  <span className="m-3 text-black">Home</span>
+                  <Link
+                    to="/wallet"
+                    style={{ textDecoration: 'none', color: '#fff' }}
+                  >
+                    <AiFillHome
+                      style={{
+                        fontSize: '25px',
+                        color: '#000000',
+                        cursor: 'pointer',
+                      }}
+                    />
+                    <span className="m-3 text-black">Home</span>
+                  </Link>
                 </Card.Title>
                 <Card.Title className="my-3">
                   <MdSwapCalls

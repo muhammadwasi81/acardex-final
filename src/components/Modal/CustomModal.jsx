@@ -39,11 +39,11 @@ export default function CustomModal({ onShow, onHide }) {
               className="fs-6"
             >
               <Row>
-                <Col md={2} sm={12}>
-                  <Form.Check aria-label="option 1" className="p-3" />
+                <Col md={1} sm={1}>
+                  <Form.Check aria-label="option 1" className="mt-2 p-2 m-3" />
                 </Col>
-                <Col md={10} sm={12}>
-                  <p className="text-start mt-2">
+                <Col md={11} sm={11}>
+                  <p className="text-start mt-2 p-2">
                     By connecting you wallet,You agree to our{' '}
                     <span style={{ color: 'red' }}>
                       Disclaimer.Use Terms and our Privacy Policy

@@ -10,7 +10,7 @@ export default function Header() {
       <Navbar className="navbar" expand="lg">
         <Container>
           <Link to="/" style={{ textDecoration: 'none' }}>
-            <Navbar.Brand href="#home" className="text-white m-2">
+            <Navbar.Brand href="/" className="text-white m-2">
               <TiArrowBackOutline
                 style={{ fontSize: '30px', color: '#ffffff' }}
               />
@@ -22,15 +22,10 @@ export default function Header() {
       <Container>
         <Navbar.Brand href="#home">
           <img
-            src="/assets/first.png"
+            src="/assets/nav-logo.png"
             className="d-inline-block align-top"
-            width="80px"
-            height="80px"
-            alt="AcarDexEx DEX"
+            alt="nav-logo"
           />
-          <p className="d-inline-block align-top mt-4 text-white fw-bold">
-            ACARDEX DEX
-          </p>
         </Navbar.Brand>
       </Container>
     </>

@@ -101,15 +101,16 @@ export default function Liquidity() {
                 className="p-3"
               >
                 <Card.Title className="my-3">
-                  <AiFillHome
-                    style={{
-                      fontSize: '25px',
-                      color: '#000000',
-                      cursor: 'pointer',
-                    }}
-                    onClick={handleShow}
-                  />
-                  <span className="m-3 text-black">Home</span>
+                  <Link to="/wallet" style={{ textDecoration: 'none' }}>
+                    <AiFillHome
+                      style={{
+                        fontSize: '25px',
+                        color: '#000000',
+                        cursor: 'pointer',
+                      }}
+                    />
+                    <span className="m-3 text-black">Home</span>
+                  </Link>
                 </Card.Title>
                 <Link to="/swap" style={{ textDecoration: 'none' }}>
                   <Card.Title className="my-3">

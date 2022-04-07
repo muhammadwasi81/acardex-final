@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 
-/* html,
+html,
 body {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
@@ -17,19 +17,9 @@ body {
   -webkit-background-color: #8e67fc;
   -o-background-color: #8e67fc;
   -moz-background-color: #8e67fc;
-  background: url('../public/assets/back.png') no-repeat center center;
-  -webkit-background: url('../public/assets/back.png') no-repeat center center;
-  -moz-background: url('../public/assets/back.png') no-repeat center center;
-  -o-background: url('../public/assets/back.png') no-repeat center center;
-  object-fit: contain;
-  -webkit-object-fit: contain;
-  background-size: cover;
-  -webkit-background-size: contain;
-  background-attachment: fixed;
-  -webkit-background-attachment: fixed;
   font-family: 'Merriweather Sans, sans-serif' !important;
   -webkit-font-family: 'Merriweather Sans, sans-serif' !important;
-} */
+}
 
 /* navbar */
 .navbar {

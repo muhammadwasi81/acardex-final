@@ -9,6 +9,7 @@
   box-sizing: border-box;
 }
 
+html,
 body {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;

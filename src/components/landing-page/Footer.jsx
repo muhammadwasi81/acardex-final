@@ -9,10 +9,11 @@ export default function Footer() {
           <Container>
             <Row>
               <Col md={6} sm={12} className="my-5">
-                <img src="/assets/logo.png" alt="logo" />
-                <p className="d-inline-block align-top mt-5 text-white fw-bold">
-                  ACARDEX DEX
-                </p>
+                <img
+                  src="/assets/nav-logo.png"
+                  width="200px"
+                  alt="footer-logo"
+                />
                 <p className="my-3 lh-5 text-white">
                   AcardexDex is the sweetest decentralized
                   <br /> exchange on Cardano and aiming to be <br />
